@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script>
+            /*
+                Dany Dang
+                Sept 16th, 2015
+                Homework with Ternary Operator
+            */
+        </script>
+        <title>Grade using Ternary Operator</title>
+</head>
+
+<body>
+        <script>
+		
+			var score = prompt("Please enter your score:");
+			var grade = score <    0 ? "Incorrect input" :
+						score <   60 ? "an F" :
+						score <   70 ? "a D"  :
+						score <   80 ? "a C"  :
+						score <   90 ? "a B"  : 
+					    score <= 100 ? "an A":
+							           "Not a possible score";
+          
+			document.write("<p>Your grade is " + grade + ".</p>");
+        </script>
+    </body>
+</html>
