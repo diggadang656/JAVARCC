@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title>Grade Assignment</title>
+</head>
+<body>
+	<script>
+/*
+     Dany Dang
+	 Sept 16th, 2015
+	 Paycheck Calculator
+*/
+/*Declare variables */
+	var wage = prompt("How much are you paid per hour?");
+	var hoursworked = prompt("How many hours did you work per week?");
+	var regulartime;
+	var overtime;
+	var tripleTime;
+	var payCheck;
+/*calculate paycheck */
+	if(hoursworked<=20){
+		payCheck = wage * hoursworked;
+	}else if(hoursworked > 20 && hoursworked < 40){
+		regulartime = 20;
+		overtime = hoursworked - 20;
+		payCheck = (overtime * (wage * 2)) + (wage * regulartime);
+	}else{
+		regulartime = 20;
+		overtime = 20;
+		tripleTime= hoursworked - 40;
+		payCheck = (tripleTime * (wage * 3)) + (overtime * (wage * 2)) + (wage * regulartime);
+	
+	}
+		document.write (payCheck);
+	</script>
+
+
+	</body>
+</html>
